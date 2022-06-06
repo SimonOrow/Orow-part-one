@@ -1,0 +1,26 @@
+html * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.orangetext {
+    color:#ff5c0f;  
+}
+
+.bluetext {
+    color:#20a8b4;
+}
+
+.grey {
+   color:#F2F2F2
+}
+
+.codebutton {
+    border-radius: 10px;
+    padding: 12px;
+    background-color:#20a8b4;
+    color: white;
+}
+
+.codebutton:hover{
+    background-color:#ff5c0f;
+}
