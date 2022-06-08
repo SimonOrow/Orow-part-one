@@ -1,9 +1,15 @@
+/* Main page CSS */
 html * {
     font-family: 'Roboto', sans-serif;
 }
 
+/* This makes it so that all content including navigation can go as far left as possible and take up whole page */
+body {
+    margin: 0;
+}
+
 .orangetext {
-    color:#ff5c0f;  
+    color:#ff5c0f;
 }
 
 .bluetext {
@@ -11,7 +17,11 @@ html * {
 }
 
 .grey {
-   color:#F2F2F2
+    color:#F2F2F2;
+}
+
+.backgroundgrey {
+    background-color: #F2F2F2;
 }
 
 .codebutton {
@@ -19,8 +29,115 @@ html * {
     padding: 12px;
     background-color:#20a8b4;
     color: white;
+    border: none;
+    width: auto;
 }
 
 .codebutton:hover{
     background-color:#ff5c0f;
+    border: none;
+}
+
+.content {
+    margin: 10px 15px;
+}
+
+.codeimage {
+    width: 25%; 
+    margin: 10px auto;
+}
+
+main {
+  padding-top: 10%;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+/* Navigation CSS */
+nav {
+    background: #F2F2F2;
+    height: 80px;
+    width: 100%;
+}
+
+label.title{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+/* Have all list items on the right, and within the whole navigation block, center list items vertically. */
+nav ul {
+    float: right;
+    top: 50%;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+/* Set color, padding, and remove the underlines that come with anchor tags */
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#ff5c0f;
+}
+
+@media (max-width: 768px){
+
+    .content {
+        margin: 10px 15px;
+        width: 100%;
+    }
+
+    img {
+        display: none;
+        visibility: hidden;
+    }
+
+    label.title {
+        font-size: 30px;
+   }
+
+    .codebutton {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        background: #F2F2F2;
+        text-align: left;
+   }
+
+    nav ul li {
+        display: block;
+        margin: 32px 0;
+        line-height: 1px;
+   }
+
+    nav ul li a {
+        font-size: 20px;
+   }
+
+    a:hover {
+        color: #ff5c0f;
+   }
+
+   .buttonitem {
+        margin: 10px 15px;
+    }
 }
